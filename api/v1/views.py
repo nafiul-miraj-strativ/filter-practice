@@ -7,4 +7,3 @@ class MemberViewSet(viewsets.ModelViewSet):
     queryset = Member.objects.all()
     serializer_class= MemberSerializer
     filter_backends =[DjangoFilterBackend]
-    filterset_fields = ['is_active']
